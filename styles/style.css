@@ -1,0 +1,13 @@
+@import url(normalize.css);
+@import url(header.css);
+@import url(our_sites.css);
+@import url(simple_solutions.css);
+@import url(num&vision.css);
+@import url(review.css);
+@import url(priceing.css);
+@import url(newsletter.css);
+@import url(footer.css);
+
+body {
+    font-family: 'Inter';
+}

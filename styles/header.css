@@ -1,0 +1,137 @@
+.header {
+    background-image: url(../images/background_header.png);
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-right: 10%;
+}
+
+.header__nav_bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    padding-right: 10%;
+}
+
+.header__nav_bar img {
+    width: 165px;
+    height: 43px;
+}
+
+.nav_bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.header__nav_link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    margin-right: 20px;
+    text-decoration: none;
+    color:#FFFFFF;
+    opacity: 70%;
+}
+
+.header__nav_link:hover {
+    font-weight: 600;
+    opacity: 100%;
+}
+.header_button {
+    width: 170px;
+    height: 60px;
+    background-color: #FF5A05;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    margin-right: 30px;
+    color:#FFFFFF;
+}
+
+.header_button:hover {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+}
+
+.header_container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-right: 70px;
+    padding-bottom: 170px;
+}
+
+.header_text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 420px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color:#FFFFFF;
+    letter-spacing: 10%;
+}
+
+.header_text h2 {
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 73px;
+    color:#FFFFFF;
+}
+
+.header_text span {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color:#FFFFFF;
+}
+
+.header_text hr {
+    width: 365px;
+    background-color: #FFFFFF;
+    border: 0.5px solid #FFFFFF;
+    margin-left: 0;
+}
+
+.header_text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color:#FFFFFF;
+    Opacity: 70%;
+}
+.header_picture img {
+    width: 700px;
+    height: 480px;
+}
+
+.header_text__buttons button {
+    width: 170px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    margin-right: 30px;
+    color:#FFFFFF;
+}
+.header_text__buttons button:hover {
+    background-color: #FF5A05;
+    border: none;
+}
