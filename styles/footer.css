@@ -52,4 +52,5 @@ footer {
 .footer_links a:hover, .footer_links a:active, .footer_links a {
     text-decoration: none;
     color: #FFFFFF;
+    cursor: pointer;
 }

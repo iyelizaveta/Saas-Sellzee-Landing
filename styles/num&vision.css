@@ -7,7 +7,6 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    align-content: center;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -16,40 +15,64 @@
     text-align: center;
 }
 
+.about_numbers__list--rectangle {
+    width: 240px;
+    height: 270px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .about_numbers__list p {
     font-weight: bold;
-    font-size: 55px;
+    font-size: 50px;
     color: #1F37FF;
     display: inline;
-    position: relative;
-    z-index: 1;
 }
 
-.about_numbers__list li span {
+.about_numbers__list span {
     font-weight: 600;
     font-size: 20px;
+    line-height: 160%;
     color: #05000B;   
     opacity: 0.7;
-    position: relative;
-    z-index: 1;
 }
 
-.about_numbers__list img {
-    width: 261px;
-    height: 371px;
+.about_numbers__list--triangle_top {
+    width: 240px;
+    height: 150px;
     position: relative;
-    top: -170px;
-    z-index: 0;
-    margin: 0;
 }
+
+.about_numbers__list--triangle_top:after {
+    content: '';
+    position: absolute;
+    top: -70px;
+    left: 35px;
+    background: white;
+    border: 85px solid transparent;
+    transform: rotate(45deg);
+    box-shadow: 25px 25px 35px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+  }
+
+  .about_numbers__list--triangle {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #FFFFFF;
+  }
 
 .your_vision {
     background: #FFF9F5;
-    padding-left: 10%;
-    padding-top: 85px;
-    padding-right: 10%;
-    padding-bottom: 75px;
-    margin-top: 50px;
+    padding: 85px 10% 75px 10%;
+    margin-top: 150px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 295px 285px;
@@ -96,6 +119,18 @@
     border-radius: 10px;
 }
 
+.your_vision__point:hover, .your_vision__point--bottom-line:hover {
+    background-color: #4252CF;
+    cursor: pointer;
+}
+
+.your_vision__point img, .your_vision__point--bottom-line img {
+    width: 57px;
+    height: 57px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
 .your_vision__point h2, .your_vision__point--bottom-line h2 {
     font-weight: 600;
     font-size: 20px;
@@ -121,4 +156,143 @@
     border: 2px solid rgba(66, 82, 207, 0.1);
     box-sizing: border-box;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .about_numbers__list--rectangle {
+        width: 190px;
+        height: 250px;
+    }
+    
+    .about_numbers__list p {
+        font-size: 35px;
+    }
+    
+    .about_numbers__list span {
+        font-size: 20px;
+        margin: 0;
+    }
+    
+    .about_numbers__list--triangle_top {
+        width: 190px;
+        height: 90px;
+    }
+
+    .about_numbers__list--triangle_top:after {
+        top: -65px;
+        left: 27px;
+        background: white;
+        border: 68px solid transparent;
+    }
+    .your_vision__main h3 {
+        font-size: 25px;
+        line-height: 130%;
+    }
+
+    .your_vision__point {
+        width: 280px;
+        height: auto;
+    }
+    
+    .your_vision__point--bottom-line {
+        width: 280px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .about_numbers__list--rectangle {
+        width: 150px;
+        height: 220px;
+    }
+    
+    .about_numbers__list p {
+        font-size: 30px;
+    }
+    
+    .about_numbers__list span {
+        font-size: 14px;
+        line-height: 100%;
+        margin: 0;
+    }
+    
+    .about_numbers__list--triangle_top {
+        width: 150px;
+        height: 95px;
+    }
+
+    .about_numbers__list--triangle_top:after {
+        top: -55px;
+        left: 22px;
+        background: white;
+        border: 53px solid transparent;
+    }
+
+    .your_vision {
+        grid-template-rows: 230px 235px;
+    }
+    
+    .your_vision__main h2 {
+        font-size: 15px;
+    }
+    
+    .your_vision__main h3 {
+        font-size: 20px;
+    }
+    
+    .your_vision__main p {
+        font-size: 12px;
+    }
+
+    .your_vision__point {
+        width: 220px;
+        height: 205px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    
+    .your_vision__point--bottom-line {
+        width: 220px;
+        height: 205px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+
+    .your_vision__point h2, .your_vision__point--bottom-line h2 {
+    font-size: 15px;
+    }
+
+    .your_vision__point p, .your_vision__point--bottom-line p {
+    font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .your_vision {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 210px 210px 210px;
+    }
+
+    .about_numbers__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .your_vision__point {
+        width: 200px;
+        height: 200px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    
+    .your_vision__point--bottom-line {
+        width: 200px;
+        height: 200px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
 }

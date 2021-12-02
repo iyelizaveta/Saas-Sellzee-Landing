@@ -25,7 +25,6 @@
     padding-top: 70px;
     display: flex;
     padding-left: 10%;
-
 }
 
 .what_say h3 {
@@ -97,6 +96,10 @@
     z-index: 3;
 }
 
+.slider_buttons {
+    display: none;
+}
+
 .slider_buttons__left {
     width: 46px;
     height: 46px;
@@ -113,6 +116,7 @@
     border: 2px solid #FF5A05;
     background-color: #FFFFFF;
     color: #FF5A05;
+    cursor: pointer;
 }
 
 .slider_buttons__right {
@@ -130,6 +134,7 @@
     border: 2px solid #FF5A05;
     background-color: #FFFFFF;
     color: #FF5A05;
+    cursor: pointer;
 }
 
 .user_photo {
@@ -141,4 +146,99 @@
     position: relative;
     z-index: 0;
     left: -40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .user_name {
+        padding-left: 20px;
+        width: 330px;
+        height: 80px;
+    }
+    
+    .user_name h4 {
+        font-size: 20px;
+    }
+    
+    .user_name p {
+        font-size: 15px;
+    }
+    
+    .user_grade {
+        width: 570px;
+        height: 170px;
+        top: -50px;
+    }
+    
+    .user_grade p {
+        font-size: 14px;
+        margin-left: 15px;
+        padding-top: 75px;
+    }
+    
+    .user_grade img {
+        top: 20px;
+        right: 20px;
+    }
+    .user_photo {
+        width: 340px;
+        height: 330px;
+        left: -60px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .user_photo {
+        display: none;
+        width: 200px;
+        height: 150px;
+    } 
+}
+
+@media screen and (max-width: 770px) {
+    .review h2 {
+        font-size: 40px;
+    }
+    
+    .review p {
+        width: 410px;
+        font-size: 14px;
+    }
+
+    .what_say__container {
+        padding: 0;
+    }
+
+    .user_name {
+        padding-left: 20px;
+        width: 200px;
+        height: 60px;
+    }
+    
+    .user_name h4 {
+        font-size: 15px;
+    }
+    
+    .user_name p {
+        font-size: 12px;
+    }
+    
+    .user_grade {
+        width: 450px;
+        height: 120px;
+        top: -50px;
+    }
+    
+    .user_grade p {
+        width: 430px;
+        font-size: 12px;
+        margin-left: 5px;
+        padding-top: 65px;
+        line-height: 100%;
+       
+    }
+    
+    .user_grade img {
+        top: 5px;
+        right: 5px;
+    }
 }

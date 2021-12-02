@@ -17,13 +17,14 @@
 .priceing_tariffs h2 {
     font-weight: bold;
     font-size: 31px;
+    line-height: 160%;
     color: #05000B;
     text-align: center;
     margin: auto;
     }
 
 .priceing_tariffs__button {
-    width: 355px;
+    width: 350px;
     height: 85px;
     margin: auto;
     margin-top: 25px;
@@ -49,6 +50,7 @@
 .priceing_tariffs__button button:hover {
     background: #FF5A05;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .priceing_tariffs__variants {
@@ -57,12 +59,12 @@
     display: flex;
     justify-content: center;
     position: relative;
-    top: -150px;
+    top: -200px;
 }
 
 .standart {
     width: 400px;
-    height: 600px;
+    height: 620px;
     background: #FFFFFF;
     border: 1px solid rgba(31, 55, 255, 0.1);
     border-radius: 10px;
@@ -85,7 +87,7 @@
 .standart h3 {
     font-weight: bold;
     font-size: 90px;
-    line-height: 120%;
+    line-height: 130%;
     text-align: center;
     color: #1F37FF;
     margin: 0;
@@ -106,10 +108,21 @@
     font-size: 16px;
     line-height: 160%;
     color: #05000B;
+    margin: 0;
+}
+
+.standart li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.standart li img {
+    margin-right: 5px;
 }
 
 .standart button {
-    margin-top: 55px;
+    margin-top: 45px;
     width: 335px;
     height: 55px;
     background: #FF5A05;
@@ -126,4 +139,68 @@
     background: #FFFFFF;
     border: 2px solid #FF5A05;
     color: #FF5A05;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+    .priceing_tariffs h2 {
+        font-size: 20px;
+        }
+
+        .priceing_tariffs__button {
+            width: 250px;
+            height: 55px;
+        }
+        
+        .priceing_tariffs__button button {
+            width: 80px;
+            height: 45px;
+            font-size: 15px;
+        }
+
+        .priceing_tariffs__variants {
+            top: -200px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .standart {
+            width: 300px;
+            height: 520px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+        
+        .standart h2 {
+            font-size: 25px;
+        }
+        
+        .standart h3 {
+            font-size: 60px;
+        }
+        
+        .standart p {
+            font-size: 15px;
+        }
+        
+        .standart ul {
+            font-size: 15px;
+        }
+        
+        .standart li {
+            display: flex;
+            align-items: center;
+            margin: 5px;
+        }
+        
+        .standart li img {
+            margin-right: 5px;
+        }
+        
+        .standart button {
+            margin-top: 45px;
+            width: 280px;
+            height: 45px;
+            font-size: 15px;
+        }
 }

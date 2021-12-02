@@ -55,7 +55,7 @@
         <div class="simple_solutions">
             <a name="About"></a>
             <div class="simple_solutions__container">
-                <img src="./images/simple_solutions/simple_solutions.png" alt="A man">
+                <img class="simple_solutions__container--image" src="./images/simple_solutions/simple_solutions.png" alt="A man">
                 <div class="simple_solutions__legend">
                     <div class="circle"><img src="./images/simple_solutions/simple_solutions1.png" alt ="Circle"></div>
                     <p class="legend">Legend</p>
@@ -69,7 +69,7 @@
                         <li><img src="./images/simple_solutions/John.png" alt="John">John</li>
                         <li><img src="./images/simple_solutions/Mike.png" alt="Mike">Mike</li>
                         <li><img src="./images/simple_solutions/Mia.png" alt="Mia">Mia</li>
-                        <li><button class="new_transaction__list--button" type="button">&#43;</button><br>Add New</li>
+                        <li><button class="new_transaction__list--button" type="button"></button>Add New</li>
                     </ul>
                     <form>
                         <input type="number" name="transfer" placeholder="0 $">
@@ -90,10 +90,22 @@
         </div>
         <div class="about_numbers">
             <ul class="about_numbers__list">
-                <li><p>50+<br><span>Happy Clients</span></p><img src="./images/figure.png"></li>
-                <li><p>550+<br><span>Completed</span></p><img src="./images/figure.png"></li>
-                <li><p>250+<br><span>Dedicated Members</span></p><img src="./images/figure.png"></li>
-                <li><p>30++<br><span>Awards Won</span></p><img src="./images/figure.png"></li>
+                <li>
+                    <div class="about_numbers__list--rectangle"><p>50+<br><span>Happy Clients</span></p></div>
+                    <div class="about_numbers__list--triangle_top"><div class="about_numbers__list--triangle"></div></div>
+                </li>
+                <li>
+                    <div class="about_numbers__list--rectangle"><p>550+<br><span>Completed</span></p></div>
+                    <div class="about_numbers__list--triangle_top"><div class="about_numbers__list--triangle"></div></div>
+                </li>
+                <li>
+                    <div class="about_numbers__list--rectangle"><p>250+<br><span>Dedicated Members</span></p></div>
+                    <div class="about_numbers__list--triangle_top"><div class="about_numbers__list--triangle"></div></div>
+                </li>
+                <li>
+                    <div class="about_numbers__list--rectangle"><p>30++<br><span>Awards Won</span></p></div>
+                    <div class="about_numbers__list--triangle_top"><div class="about_numbers__list--triangle"></div></div>
+                </li>
             </ul>
         </div>
         <div class="your_vision">
@@ -141,8 +153,9 @@
                     <p>CEO, PParkivew int, Ltd</p>
                 </div>
                 <div class="user_grade">
-                    <img src="images/review/stars.png" alt="grade"><p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit nisl, tincidunt commodo sit. Et, purus lectus odio cursus placerat leo, non etiam. Neque at leo risus orci,</p></div>
+                    <img src="images/review/stars.png" alt="grade">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit nisl, tincidunt commodo sit. Et, purus lectus odio cursus placerat leo, non etiam. Neque at leo risus orci,</p>
+                </div>
                 <div class="slider_buttons">
                     <button class="slider_buttons__left" type="button">&lt;</button>
                     <button class="slider_buttons__right" type="button">&gt;</button>
@@ -206,7 +219,7 @@
             <h2>NEWSLETTER</h2>
             <p>We Offer Every Month 20% Off For Our All Subscribers</p>
             <form>
-                <input type="emeil" name="email" placeholder="Email Address">
+                <input type="emeil" name="email" placeholder="Email Address" required>
                 <button type="button">Subscribe</button>
             </form>
         </div>
