@@ -1,4 +1,2 @@
-.log
-build/
+.cache
 node_modules/
-.idea/
