@@ -2179,7 +2179,7 @@ h1 {
 }
 footer {
     display: flex;
-    padding: 110px 10% 150px 0;
+    padding: 110px 10% 150px 10%;
     justify-content: space-between;
     box-sizing: border-box;
     background-image: url(/footer_background.650fa8dd.png);
@@ -2198,7 +2198,7 @@ footer {
     margin: 0;
     width: 160px;
     height: 40px;
-    }
+}
 
 .contacts ul {
     padding: 0;
@@ -2208,6 +2208,11 @@ footer {
 
 .contacts li {
     margin-right: 15px;
+}
+
+.footer_nav {
+    display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .footer_links ul {
@@ -2232,6 +2237,40 @@ footer {
     text-decoration: none;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+    .contacts .logo {
+        width: 130px;
+        height: auto;
+    }
+    .contacts ul {
+        flex-direction: column;
+    }
+
+    .footer_links ul {
+        font-size: 0.9em;
+    }
+    
+    .footer_links li {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contacts .logo {
+        display: none;
+    }
+
+    .contacts li img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer_nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 body {
     font-family: 'Inter';
