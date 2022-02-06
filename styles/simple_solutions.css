@@ -488,3 +488,29 @@
         font-size: 10px;
     }
 }
+
+@media screen and (max-width: 500px) {
+
+    .simple_solutions {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .simple_solutions__container {
+        width: 250px;
+        height: 230px;
+    }
+
+    .simple_solutions__container--image {
+        width: 250px;
+        height: 230px;
+    }
+
+    .new_transaction {
+        left: 90px;
+    }
+
+    .simple_solutions__legend {
+        left: 170px;
+    }
+}

@@ -250,6 +250,7 @@
         padding-left: 10px;
         padding-top: 10px;
         padding-right: 10px;
+        margin: 5px;
     }
     
     .your_vision__point--bottom-line {
@@ -258,6 +259,7 @@
         padding-left: 10px;
         padding-top: 10px;
         padding-right: 10px;
+        margin: 5px;
     }
 
     .your_vision__point h2, .your_vision__point--bottom-line h2 {
@@ -280,19 +282,50 @@
         justify-content: center;
     }
 
-    .your_vision__point {
+    .your_vision__point, .your_vision__point--bottom-line {
         width: 200px;
         height: 200px;
         padding-left: 10px;
         padding-top: 10px;
         padding-right: 10px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .your_vision__main h2 {
+        font-size: 12px;
     }
     
-    .your_vision__point--bottom-line {
-        width: 200px;
-        height: 200px;
-        padding-left: 10px;
-        padding-top: 10px;
-        padding-right: 10px;
+    .your_vision__main h3 {
+        font-size: 15px;
+    }
+    
+    .your_vision__main p {
+        font-size: 10px;
+    }
+
+    .your_vision__point img, .your_vision__point--bottom-line img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .your_vision {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .about_numbers__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .your_vision__point, .your_vision__point--bottom-line {
+        width: 160px;
+        height: 160px;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        margin: 5px;
     }
 }
